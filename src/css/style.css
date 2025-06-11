@@ -20,3 +20,107 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    position: fixed;    
+}
+.header-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content ul{
+    display: flex;
+    column-gap: 2.18rem;
+}
+.header-content ul li a{
+    font-size: 1rem;
+    color: var(--primary_color);
+}
+.btn{
+    padding: 0.625rem 2.18rem;
+    outline: none;
+    border: 1px solid#000D83;
+    color: var(--primary_color);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.borderless{
+    font-weight: unset;
+    border: unset;
+    font-size: 1rem;
+}
+
+#banner{
+    background-color: var(--bg_color);
+    padding-top: 7.8215rem;
+    padding-bottom: 2.8215rem;
+}
+.banner-wrapper{
+    display: flex;
+    column-gap: 6.875rem;
+}
+.section-label{
+    font-size: 1.125rem;
+    color: var(--secondary_color);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.875rem;
+}
+.heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    color: var(--primary_color);
+    margin-bottom: 1.875rem;
+}
+.description{
+    color: rgba(4, 9, 49, 0.71);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.875rem;
+}
+.get-start{
+    background-color: var(--primary_color);
+    color: #ffffff;
+    font-weight: normal;
+    margin-right: 1rem;
+    
+}
+.students{
+    padding-top: 1.875rem;
+    display: flex;
+    position: relative;
+
+}
+.students-img{
+    display: flex;
+    column-gap: -50px;
+    position: relative;
+}
+
+.students-img img:nth-child(2){
+    position: absolute;
+    left: 30px;
+}
+.students-img img:nth-child(3){
+    position: absolute;
+    left: 60px;
+}
+.students-img img:nth-child(4){
+    position: absolute;
+    left: 90px;
+}
+.students span{
+    position: absolute;
+    left: 30%;
+    top: 50%
+}
