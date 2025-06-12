@@ -27,7 +27,9 @@ body {
 header{
     width: 100%;
     height: 5rem;
-    position: fixed;    
+    position: fixed; 
+    z-index: 1000;
+    background-color: var(--bg_color);   
 }
 .header-content{
     height: 100%;
@@ -52,11 +54,25 @@ header{
     border-radius: 0.5rem;
     font-size: 0.875rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--secondary_color);
+    color: #ffffff;
 }
 .borderless{
     font-weight: unset;
     border: unset;
     font-size: 1rem;
+    padding: unset;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+}
+.borderless:hover{
+    border: 1px solid var(--primary_color);
+    background-color: var(--secondary_color);
+    color: #ffffff;
 }
 
 #banner{
@@ -123,4 +139,207 @@ header{
     position: absolute;
     left: 30%;
     top: 50%
+}
+
+
+/* About Section */
+#about{
+    padding-top: 11.25rem;
+    padding-bottom: 5.625rem;
+}
+.about-wrapper{
+    display: flex;
+    column-gap: 6.25rem;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.49rem;
+}
+.feature-item{
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 10px 57px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 6px 10px 57px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 6px 104px 57px 0px rgba(0,0,0,0.4);
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.feature-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #EDFAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-item p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.feature-arrow{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+/* School section */
+#school{
+    padding: 5.625rem 0;
+}
+.school-wrapper{
+    display: flex;
+    column-gap: 9.375rem;
+}
+
+#studying{
+    padding: 5.625rem 0;
+}
+#studying .section-label,
+#studying .heading{
+    text-align: center;
+}
+#studying .heading{
+    max-width: 33.5625rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.courses{
+    margin-top: 4.5rem;
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    
+}
+.course{
+    padding: 0.5rem;
+    border-radius: 10px;
+    flex-basis: calc(25% - 0.2rem);
+    box-shadow: 10px 24px 53px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 10px 24px 53px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 10px 24px 53px 0px rgba(0,0,0,0.1);
+}
+.course-content{
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+}
+.course-content h3{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #040931;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.course-content p{
+    color: rgba(4, 9, 49, 0.71);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+
+.newsletter-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+
+  /* background image */
+  background: url('../images/news-letter.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  
+  /* blending color + opacity */
+  background-color: rgba(0, 13, 131, 0.8) /* semi-transparent color */
+  
+  /* optional: add another semi-opacity to the image via blend mode */
+  /* you can skip this if you only want color */
+}
+
+.newsletter-content {
+  position: relative; /* keeps text above the overlay */
+  z-index: 1;
+}
+.newsletter-content h2,
+.newsletter-content p{
+    color: #ffffff;
+}
+.newsletter-content button{
+    background-color: var(--secondary_color);
+}
+.newsletter-content button:hover{
+    background-color: var(--primary_color);
+    border: 1px solid var(--secondary_color);
+}
+
+
+
+
+
+
+footer{
+    padding: 3rem 0;
+    background-color: var(--bg_color);
+}
+.footer-detail p{
+    font-size: 1rem;
+    line-height: 2;
+    max-width: 260px;
+    color: rgba(4, 9, 49, 0.71);
+    padding: 0.6rem 0 1rem 0;
+}
+.social-icons{
+    display: flex;
+    column-gap: 1rem;
+}
+.social-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #D3D4D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-menu h3{
+    color: #040931;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.footer-menu li{
+    padding-bottom: 1rem;
+}
+.footer-menu li a{
+    color: rgba(4, 9, 49, 0.71);
+    font-size: 1rem;
+    transition: all 1s ease-out;
+}
+.footer-menu li a:hover{
+    text-decoration: underline;
 }
