@@ -25,10 +25,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Schools</a></li>
-                    <li><a href="#">Studing</a></li>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#school">Schools</a></li>
+                    <li><a href="#studying">Studing</a></li>
                 </ul>
             </nav>
             <div class="account">
@@ -73,8 +73,8 @@
             </section>
             <!-- About Section -->
             <section id="about" class="about-section">
-                <!-- Left side image -->
-                <aside class="about-image">
+                <div class="container about-wrapper">
+                    <aside class="about-image">
                     <img src="./src/images/about.png" alt="Happy Students Walking">
                 </aside>
 
@@ -85,26 +85,41 @@
 
                     <div class="features">
                         <div class="feature-item">
-                            <img src="./src/images/icons/badge.png" alt="Badge Icon" aria-hidden="true">
+                            <div class="feature-icon">
+                                <img src="./src/images/icons/badge.png" alt="Badge Icon" aria-hidden="true">
+                            </div>
                             <p>Best quality in the world</p>
-                            <img src="./src/images/icons/arrow.png" alt="">
+                            <div class="feature-arrow">
+                                <img src="./src/images/icons/arrow.png" alt="">
+                            </div>
                         </div>
                         <div class="feature-item">
-                            <img src="./src/images/icons/dollar.png" alt="Dollar Icon" aria-hidden="true">
+                            <div class="feature-icon">
+                                <img src="./src/images/icons/dollar.png" alt="Dollar Icon" aria-hidden="true">
+                            </div>
                             <p>The cost is affordable and cheap</p>
-                            <img src="./src/images/icons/arrow.png" alt="">
+                            <div class="feature-arrow">
+                                <img src="./src/images/icons/arrow.png" alt="">
+                            </div>
                         </div>
                         <div class="feature-item">
-                            <img src="./src//images//icons/phone.png" alt="Phone Icon" aria-hidden="true">
+                            <div class="feature-icon">
+                                <img src="./src//images//icons/phone.png" alt="Phone Icon" aria-hidden="true">
+                            </div>
                             <p>24 hour consultation with us</p>
-                            <img src="./src/images/icons/arrow.png" alt="">
+                            <div class="feature-arrow">
+                                <img src="./src/images/icons/arrow.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </article>
+                </div>
+                
             </section>
             <!-- School Section -->
             <section id="school">
-                <!-- School left content -->
+                <div class="container school-wrapper">
+                    <!-- School left content -->
                 <article class="school-content">
                     <h3 class="section-label">REPUTED SCHOOLS</h3>
                     <h2 class="heading">We Have Students
@@ -115,18 +130,19 @@
                         awards, namely from the fields of technology, agriculture, fisheries and in the social and huma-
                         nities fields who are very instrumental in this very tiring daily life.
                         will not live without achievement</p>
-                    <button class="">Get Started</button>
+                    <button class="btn get-start">Get Started</button>
                 </article>
                 <!-- Right Side Content -->
                 <aside class="school-image">
                     <img src="./src/images/graduates.png" alt="Graduates">
                 </aside>
+                </div>
             </section>
 
             <!-- Studying Section -->
-            <section id="studying">
+            <section id="studying" class="container">
                 <h3 class="section-label">STUDYING</h3>
-                <h2>We Have Many Classes For
+                <h2 class="heading">We Have Many Classes For
                     You To Take Lessons</h2>
                 <div class="courses">
                     <div class="course">
@@ -136,7 +152,9 @@
                         <div class="course-content">
                             <h3>Computer Science</h3>
                             <p>74 Student</p>
-                            <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            <div class="course-rating">
+                                <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            </div>
                         </div>
                     </div>
                     <div class="course">
@@ -146,7 +164,9 @@
                         <div class="course-content">
                             <h3>Design And Art</h3>
                             <p>74 Student</p>
-                            <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            <div class="course-rating">
+                                <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            </div>
                         </div>
                     </div>
                     <div class="course">
@@ -156,7 +176,9 @@
                         <div class="course-content">
                             <h3>Business Studies</h3>
                             <p>74 Student</p>
-                            <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            <div class="course-rating">
+                                <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            </div>
                         </div>
                     </div>
                     <div class="course">
@@ -166,7 +188,9 @@
                         <div class="course-content">
                             <h3>Mathematics</h3>
                             <p>74 Student</p>
-                            <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            <div class="course-rating">
+                                <img src="./src/images/courses/rating.png" alt="Rating Icons">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,16 +198,18 @@
 
             <!-- Newsletter Section -->
             <section id="Newsletter">
-                <div class="newsletter-content">
-                    <h3>Stay Updated with Our Newsletter</h3>
-                    <p>Sign up to receive the latest updates, offers, and news directly to your inbox.</p>
-                    <button>Get Started</button>
+                <div class="container newsletter-wrapper">
+                    <div class="newsletter-content">
+                        <h2 class="heading">Stay Updated with Our Newsletter</h2>
+                        <p class="description">Sign up to receive the latest updates, offers, and news directly to your inbox.</p>
+                        <button class="btn get-start">Get Started</button>
+                    </div>
                 </div>
             </section>
     </main>
     <!-- Footer HTML -->
     <footer>
-        <div class="container">
+        <div class="container footer-wrapper">
             <div class="footer-detail">
                 <div class="footer-logo">
                     <img src="./src/images/logo.png" alt="Logo Image">
